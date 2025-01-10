@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primay-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  line-height: 3rem;
+}
+.navigation-wrap{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+
+}
+.navigation-wrap .nav-item{
+  padding: 0 0.900rem;
+  transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.nav-item h5{
+  font-family: Helvetica;
+}
+.hero {
+    background: url("/assets/images/solo\ travel.webp") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
