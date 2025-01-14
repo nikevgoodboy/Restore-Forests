@@ -73,7 +73,7 @@ h2 {
   font-family: Helvetica;
 }
 .hero {
-    background: url("/assets/images/solo\ travel.webp") no-repeat center center/cover;
+    background: url(../assets/images/solo\ travel.webp) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
