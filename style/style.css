@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
-
+div {
+  overflow: hidden;
+}
 *,
 *:after,
 *:before {
@@ -115,14 +117,23 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
-.card:nth-child(1) {
-  transition-delay: 0s;
+/* Ensure the hero section text scales responsively */
+.hero {
+  padding: 5rem 1rem;
 }
 
-.card:nth-child(2) {
-  transition-delay: 0.2s;
+.hero h1 {
+  font-size: 2rem; /* Default for small screens */
 }
 
-.card:nth-child(3) {
-  transition-delay: 0.4s;
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem; /* Medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 4rem; /* Larger screens */
+  }
 }
