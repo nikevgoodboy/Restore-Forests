@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 330px) {
+
+}
+
+
+button{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: green;
+    border: 0.1875rem solid green;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition:all .4s ease-out 0s ;
+    -o-transition:all 4s  ease-out 0s ;
+    -moz-transition: all .4s ease-out 0s ;
+    transition: all 4s ease-out 0s;
+  }
