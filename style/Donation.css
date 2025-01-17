@@ -1,4 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+html, body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+/* Ensure no horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Set the width for images and cards to avoid overflow */
+img, .card {
+  max-width: 100%;
+  height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+/* Prevent any oversized containers */
+.container-fluid, .row, .col-12, .col-md-6, .col-lg-4 {
+  max-width: 100%;
+}
+
+/* Remove padding/margin issues that could cause overflow */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix for Bootstrap elements */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 *,
 *:after,
