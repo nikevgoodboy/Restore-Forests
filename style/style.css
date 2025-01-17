@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+html, body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
 *,
 *:after,
 *:before {
