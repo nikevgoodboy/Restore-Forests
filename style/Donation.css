@@ -83,3 +83,13 @@ h2 {
   width: 100%;
   height: 100%;
 }
+/* Style for invalid input fields */
+.is-invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+.is-invalid:focus {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
