@@ -55,57 +55,57 @@ h2 {
   color: black;
   line-height: 3rem;
 }
-.navigation-wrap{
+.navigation-wrap {
   position: fixed;
   width: 100%;
   left: 0;
   z-index: 1000;
-
 }
-.navigation-wrap .nav-item{
-  padding: 0 0.900rem;
+.navigation-wrap .nav-item {
+  padding: 0 0.9rem;
   transition: all 200ms linear;
 }
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   outline: unset;
   border: unset;
   box-shadow: none;
 }
-.nav-item h5{
+.nav-item h5 {
   font-family: Helvetica;
 }
 .hero {
-    background: url(../assets/images/solo\ travel.webp) no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-  .navbar {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: all 0.5s ease-out;
-  }
-  
-  .navbar.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .hero {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-out;
-  }
-  
-  .hero.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: url(../assets/images/solo\ travel.webp) no-repeat center
+    center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.navbar {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-out;
+}
 
-  /* Initial state for cards */
+.navbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.hero.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial state for cards */
 .card {
   opacity: 0;
   transform: translateY(20px);
@@ -129,11 +129,5 @@ h2 {
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 3rem; /* Medium screens */
-  }
-}
-
-@media (min-width: 992px) {
-  .hero h1 {
-    font-size: 4rem; /* Larger screens */
   }
 }
