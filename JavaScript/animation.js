@@ -47,3 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
     animateCards();
   });
   
+
+  document.querySelectorAll(".hover-image img").forEach((image) => {
+    // Add mouseover effect
+    image.addEventListener("mouseover", () => {
+      image.style.transform = "scale(1.2)";
+      image.style.transition = "transform 0.3s ease-in-out";
+      image.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.2)";
+    });
+
+    // Remove mouseover effect
+    image.addEventListener("mouseout", () => {
+      image.style.transform = "scale(1)";
+      image.style.boxShadow = "";
+    });
+  });
