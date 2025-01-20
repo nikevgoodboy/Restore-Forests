@@ -154,3 +154,106 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownMenu.classList.remove("show");
   });
 });
+// JavaScript for navigation scroll effect
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".navigation-wrap");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+});
+
+// Alert when a "Call to action" button is clicked
+const ctaButton = document.querySelector(".btn-success");
+ctaButton.addEventListener("click", () => {
+  alert("Thank you for your interest! Let's reforest the globe together.");
+});
+
+// Handle "Add More" button clicks
+const addMoreButtons = document.querySelectorAll(".btn-success");
+addMoreButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert("Feature coming soon! Stay tuned.");
+  });
+});
+
+// Dropdown language selection
+const languageSelect = document.querySelector(".form-select");
+languageSelect.addEventListener("change", (event) => {
+  alert(`Language changed to: ${event.target.value}`);
+});
+
+// Smooth scrolling for internal links
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute("href").slice(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 50,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+// Dark mode toggle (optional feature)
+const darkModeButton = document.createElement("button");
+darkModeButton.textContent = "Toggle Dark Mode";
+darkModeButton.style.position = "fixed";
+darkModeButton.style.bottom = "10px";
+darkModeButton.style.right = "10px";
+darkModeButton.style.zIndex = "1000";
+darkModeButton.className = "btn btn-dark";
+document.body.appendChild(darkModeButton);
+
+darkModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Add CSS for dark mode (append dynamically)
+const darkModeStyle = document.createElement("style");
+darkModeStyle.textContent = `
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  body.dark-mode .card, body.dark-mode .btn {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+`;
+document.head.appendChild(darkModeStyle);
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
+  const addAnimation = () => {
+    cards.forEach((card) => {
+      if (isInViewport(card)) {
+        card.classList.add("animate-card");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", addAnimation);
+  window.addEventListener("resize", addAnimation);
+
+  // Initial animation trigger
+  addAnimation();
+});
+
