@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+/* @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
 *,
 *:after,
@@ -28,18 +28,18 @@ ol {
 }
 html {
   scroll-behavior: smooth;
-}
+} */
 body {
   font-family: var(--primay-font);
   font-size: 100%;
   font-weight: 400;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0.625rem;
 }
 ::-webkit-scrollbar-track {
   background: white;
-}
+} */
 h1 {
   font-size: 3rem;
   font-weight: 900;

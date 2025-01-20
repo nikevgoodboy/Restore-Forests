@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+/* @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 div {
   overflow: hidden;
 }
@@ -41,6 +41,9 @@ body {
 }
 ::-webkit-scrollbar-track {
   background: white;
+} */
+div {
+  overflow: hidden;
 }
 h1 {
   font-size: 3rem;
