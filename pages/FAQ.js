@@ -63,30 +63,3 @@ sr.reveal(".bi-facebook, .bi-instagram, .bi-tiktok, .bi-twitter", {
   delay: 200,
   easing: "ease-out",
 });
-// Dark mode toggle (optional feature)
-const darkModeButton = document.createElement("button");
-darkModeButton.textContent = "Toggle Dark Mode";
-darkModeButton.style.position = "fixed";
-darkModeButton.style.bottom = "10px";
-darkModeButton.style.right = "10px";
-darkModeButton.style.zIndex = "1000";
-darkModeButton.className = "btn btn-dark";
-document.body.appendChild(darkModeButton);
-
-darkModeButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
-
-// Add CSS for dark mode (append dynamically)
-const darkModeStyle = document.createElement("style");
-darkModeStyle.textContent = `
-  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  body.dark-mode .card, body.dark-mode .btn {
-    background-color: #1e1e1e;
-    color: #ffffff;
-  }
-`;
-document.head.appendChild(darkModeStyle);
